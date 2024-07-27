@@ -1,0 +1,201 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f7ff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    display: flex;
+    background: white;
+    border-radius: 20px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    max-width: 650px;
+    width: 100%;
+    text-align: center;
+    justify-content: center;
+    flex-direction: row;
+}
+
+.your, .summary {
+    padding: 50px;
+}
+
+.your {
+    background: #6c63ff;
+    color: white;
+    text-align: center;
+    width: 250px;
+}
+
+.your h2 {
+    margin: 0;
+}
+
+.circle {
+    margin: 20px;
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+    background: #5348c5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.circle .score {
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.circle .of {
+    font-size: 14px;
+    font-weight: 10px;
+}
+
+.rate {
+    font-size: 24px;
+}
+
+.descript {
+    font-size: 16px;
+}
+
+.summary {
+    width: 250px;
+}
+
+.summary h2 {
+    margin: 0 0 20px 0;
+}
+
+.mark {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 30px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.flex1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.mark1 {
+    color: #F08080;
+    background-color: #fff6f5;
+}
+
+.mark2 {
+    color: #f8de7e;
+    background-color: #fffae9;
+}
+
+.mark3 {
+    color: #7CB7BB;
+    background-color: #f2fafa;
+}
+
+.mark4 {
+    color: #2138AB;
+    background-color: #EEF6F7;
+}
+
+.button {
+    background: #040220;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    padding: 10px 20px;
+    cursor: pointer;
+    margin-top: 30px;
+    display: block;
+    width: 100%;
+}
+
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .your, .summary {
+        width: 100%;
+        padding: 20px;
+    }
+
+    .circle {
+        width: 100px;
+        height: 100px;
+    }
+
+    .circle .score {
+        font-size: 30px;
+    }
+
+    .circle .of {
+        font-size: 12px;
+    }
+
+    .rate {
+        font-size: 20px;
+    }
+
+    .descript {
+        font-size: 14px;
+    }
+
+    .mark {
+        padding: 10px 20px;
+    }
+
+    .button {
+        margin-top: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .your, .summary {
+        padding: 10px;
+    }
+
+    .circle {
+        width: 80px;
+        height: 80px;
+    }
+
+    .circle .score {
+        font-size: 20px;
+    }
+
+    .circle .of {
+        font-size: 10px;
+    }
+
+    .rate {
+        font-size: 16px;
+    }
+
+    .descript {
+        font-size: 12px;
+    }
+
+    .mark {
+        padding: 5px 10px;
+    }
+
+    .button {
+        padding: 10px;
+    }
+}
